@@ -62,6 +62,15 @@ flowchart TD
 
 Use the detailed page: **[NFPA design QA checklist](/standards/nfpa-design-qa-checklist)**
 
+## Expanded standards library
+
+| Standard page | Link |
+|---------------|------|
+| California compliance matrix | [California code compliance matrix](/standards/california-code-compliance-matrix) |
+| Inspection, testing, commissioning | [ITC standard](/standards/inspection-testing-commissioning) |
+| QA/QC punch and turnover | [QA/QC punch & turnover](/standards/qaqc-punch-and-turnover) |
+| Material substitutions | [Material substitution policy](/standards/material-substitution-policy) |
+
 ---
 
 ## Planner — code update reviews

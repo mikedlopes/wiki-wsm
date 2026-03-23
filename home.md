@@ -88,22 +88,42 @@ flowchart LR
 
 ---
 
-## Quick navigation
+## Start here
 
-| Area | Purpose |
-|------|---------|
-| [Accounting](/departments/accounting/accounts-payable-and-vendor-management) | AP, AR, job cost, tax, retainage, close |
-| [Purchasing](/departments/purchasing/overview) | Buyout, POs, receiving, vendor performance |
-| [Shop](/departments/shop/overview) | Fabrication, QA, material staging |
-| [Field](/departments/field/overview) | Installation, inspections, turnover |
-| [Design](/departments/design/overview) | Hydraulics, BIM, submittals |
-| [Estimating](/departments/estimating/overview) | Takeoff, pricing, risk registers |
-| [Bidding](/departments/bidding/overview) | Bid calendar, bonds, handoff to PM |
-| [Project management](/departments/project-management/overview) | Schedule, COs, owner communication |
-| [Projects hub](/projects/dashboard) | Active jobs, health, links |
-| [Standards](/standards/overview) | NFPA / CBC / company criteria |
-| [Lean tools](/lean-tools/overview) | 5S, kanban, A3, standard work |
-| [Templates](/templates/template-meeting-notes) | Ready-to-copy Wiki blocks |
+### By role
+
+| Role | Best first page |
+|------|-----------------|
+| Owner / leadership | [Executive office](/departments/executive/overview) |
+| Project manager | [Project management](/departments/project-management/overview) |
+| Superintendent / field lead | [Field operations](/departments/field/overview) |
+| Designer / PE | [Design](/departments/design/overview) |
+| Estimator / bidder | [Estimating](/departments/estimating/overview) |
+| Accounting / purchasing | [Accounting AP](/departments/accounting/accounts-payable-and-vendor-management) + [Purchasing](/departments/purchasing/overview) |
+| New hire | [Onboarding home](/company/onboarding/overview) |
+
+### By task
+
+| Task | Best first page |
+|------|-----------------|
+| Build company context | [Company hub](/company/overview) |
+| Win work and hand off cleanly | [Business development](/departments/business-development/overview) + [Bidding](/departments/bidding/overview) |
+| Execute a project start-to-finish | [Project lifecycle](/processes/project-lifecycle-design-build) |
+| Run fast TI projects | [TI fast-track workflow](/processes/tenant-improvement-fast-track) |
+| Control code and quality risk | [Standards](/standards/overview) |
+| Use copy/paste job tools | [Templates](/templates/template-meeting-notes) |
+| See portfolio health | [Projects hub](/projects/dashboard) |
+
+### Browse by library
+
+| Library | Purpose |
+|---------|---------|
+| [Company](/company/start-here) | About, mission, people, onboarding, office operations |
+| [Departments](/departments/project-management/overview) | Functional playbooks by team |
+| [Processes](/processes/overview) | Cross-functional operating workflows |
+| [Standards](/standards/overview) | Technical/code and QA governance |
+| [Templates](/templates/template-meeting-notes) | Ready-to-use working formats |
+| [Lean tools](/lean-tools/overview) | Continuous improvement methods |
 
 ---
 
