@@ -11,36 +11,63 @@
 
 ## Project file & folder template (SharePoint / file share)
 
-This matches the **company standard** for new jobs (Explorer / file share today; use the same names in SharePoint). Folders sort **alphabetically**—no numeric prefixes. The **wiki** stays under `projects/<ProjectID>/` in Git; the **file root** uses `/<ProjectID>-<ClientShort>/` so job folders stay unique.
+Use **one** job root: `/<ProjectID>-<ClientShort>/`. It combines (1) **numbered** folders for delivery / technical records, (2) **alphabetical** folders for commercial and pursuit work, and (3) optional **`_QuickLinks`**. The **wiki** stays under `projects/<ProjectID>/` in Git.
+
+**Where “permits, inspections, submittals, RFIs, calculations” live:** use the **numbered** paths below—do **not** add duplicate top-level folders with the same purpose (e.g. no second `Permits` if you use `04_Permits_AHJ`).
 
 ```text
 /{{PROJECT_ID}}-{{CLIENT_SHORT}}/
+
+  # Numbered — delivery / technical (sorts first in Explorer)
+  00_Admin_Contracts_Insurance/
+  01_Design_Calcs_ShopDrawings/     ← calculations, hydraulic calcs, shop dwg support
+  02_Submittals/
+  03_RFIs_ChangeOrders/             ← RFIs + change orders
+  04_Permits_AHJ/                   ← permits, AHJ correspondence
+  05_Field_Site/
+  06_Testing_Inspection/            ← inspections, test reports, witness sheets
+  07_Closeout/
+
+  # Alphabetical — commercial / pursuit / procurement
   Bid/
-  Billing/
+  Billing/                          ← pay apps, SOV, billing correspondence (not raw vendor invoices)
   Change Estimates/
   Contract/
   Drawings/
+  Invoices/                         ← vendor + customer invoice PDFs, AP/AR backup, COI billing tie-ins
   Job Setup/
+  Material Listing/               ← BOM, material logs, takeoff exports, procurement lists
   Prelien Info/
+  Purchase Orders/                ← PO PDFs, PO registers, sub PO tracking
   Template Forms/
-  _QuickLinks/          ← optional: .url shortcuts to wiki, Planner, Teams, Procore
+
+  _QuickLinks/                      ← optional: .url to wiki, Planner, Teams, Procore
 ```
 
 | Folder | Typical contents |
 |--------|------------------|
-| `Bid` | Pursuit / bid-stage files, addenda received during bidding, pricing workpapers |
-| `Billing` | Applications, pay app backup, billing correspondence, lien-release support |
-| `Change Estimates` | T&M, change estimates, CO pricing drafts before formal contract CO |
-| `Contract` | Prime contract, subcontracts, COIs, bonds, executed change orders |
-| `Drawings` | Contract drawings, revisions, shop drawing PDFs, design correspondence |
-| `Job Setup` | Kickoff, internal job setup, insurance / compliance setup, job numbering |
-| `Prelien Info` | Preliminary notices, prelien tracking, releases (as applicable) |
-| `Template Forms` | Job-specific copies of company blank forms (if not centralized elsewhere) |
-| `_QuickLinks` | Shortcut files to this wiki page, job Planner, Teams channel, PM tool |
+| `00_Admin_Contracts_Insurance` | Prime contract, subs, COIs, bonds, NOCs, notices |
+| `01_Design_Calcs_ShopDrawings` | **Calculations**, shop drawings, BIM exports, design correspondence |
+| `02_Submittals` | **Submittals**, approvals, product data |
+| `03_RFIs_ChangeOrders` | **RFIs**, COs, PCOs, pricing backup |
+| `04_Permits_AHJ` | **Permits**, applications, CORs, inspector correspondence |
+| `05_Field_Site` | Site photos, daily reports, safety, laydown, ASIs |
+| `06_Testing_Inspection` | **Inspections**, hydro / flow / main drain, test packages |
+| `07_Closeout` | As-builts, O&M, training, warranties, lien releases |
+| `Bid` | Pursuit / bid-stage files, addenda during bidding, pricing workpapers |
+| `Billing` | Pay applications, billing letters (use **`Invoices`** for invoice PDFs) |
+| `Change Estimates` | T&M, change estimates, CO pricing drafts |
+| `Contract` | Executed contracts, COIs, bonds, executed COs |
+| `Drawings` | Contract drawings, revisions, transmittals |
+| `Invoices` | **Invoices** (vendor + customer copies), supporting scans for AP/AR |
+| `Job Setup` | Kickoff, internal setup, insurance / compliance, job numbering |
+| `Material Listing` | **Material listing** / BOM, material status exports |
+| `Prelien Info` | Preliminary notices, prelien tracking, releases |
+| `Purchase Orders` | **Purchase orders**, PO backups, receiving tie-ins |
+| `Template Forms` | Job-specific company blank forms |
+| `_QuickLinks` | Shortcuts to wiki page, Planner, Teams, PM tool |
 
 **`{{CLIENT_SHORT}}`:** agreed abbreviation (often 3–5 chars), stable for the job—document it in the snapshot table so accounting and PM use the same root name.
-
-*Field execution extras (daily reports, test sheets, closeout O&M) often land under **Contract** / **Drawings** / **Job Setup** or your PM tool—keep team rules consistent when you add SharePoint views or metadata.*
 
 ---
 
