@@ -43,29 +43,25 @@ Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark item
 
 ## Task 2 — SharePoint sites + URLs
 
-**Goal:** Decide how many SharePoint **sites** you will maintain (not per job—per *function*), name them, and paste **canonical URLs** here so Task 3–5 can link to real locations.
+**Goal:** Stand up the **minimum** footprint, paste **canonical URLs** here, then Task 3–5 can link to real locations.
 
-**Recommended default for a ~30-person internal shop (adjust names to your tenant):**
+**Agreed model (reduce sprawl):**
 
-| # | Site function | Typical contents | Owner (who decides access) |
-|---|----------------|------------------|----------------------------|
-| 1 | **Organization / intranet hub** | Company links, news, optional HR/IT entry points | Admin / IT |
-| 2 | **Operations & projects** | **PRJ-Active** / **PRJ-Archive** (or one library + Lifecycle); project roots `/<ProjectID>-<ClientShort>/` | Operations / PM |
-| 3 | **Estimating & bids** (can merge with #2 if same owners) | Bids library, bid status list | Estimating / BD |
-| 4 | **Accounting / finance** (restricted) | Invoices–receipts supporting docs, month-end, audit binders | Accounting |
+| Priority | Site function | What lives here |
+|----------|----------------|-----------------|
+| **Ship first** | **Organization / intranet hub** | Company links, news, optional HR/IT entry points |
+| **Ship first** | **Operations & projects** | **Everything delivery + preconstruction:** **PRJ-Active** / **PRJ-Archive**, project roots `/<ProjectID>-<ClientShort>/`, **Bids** library (and optional bid list) — **no separate Estimating site** |
+| **Placeholder** | **Accounting / finance** | Reserved for restricted AP/AR supporting docs later; **not required to launch** hub + operations. Use `REPLACE_ACCOUNTING_SITE_URL` or `TBD` until ready |
 
-**Merge options:** Combine **Estimating & bids** into **Operations** if you want fewer URLs; keep **Accounting** separate for permissions.
-
-**Record your tenant (replace placeholders after sites exist):**
+**Record your tenant (replace placeholders when sites exist):**
 
 | Site display name | SharePoint site URL | Notes |
 |-------------------|---------------------|--------|
 | *(e.g. WSM Intranet)* | `REPLACE_HUB_SITE_URL` | |
-| *(e.g. WSM Operations)* | `REPLACE_OPERATIONS_SITE_URL` | Job document libraries live here |
-| *(e.g. WSM Estimating)* | `REPLACE_ESTIMATING_SITE_URL` | Or `—` if merged with Operations |
-| *(e.g. WSM Accounting)* | `REPLACE_ACCOUNTING_SITE_URL` | Restricted membership |
+| *(e.g. WSM Operations)* | `REPLACE_OPERATIONS_SITE_URL` | Jobs + **Bids** live here |
+| *(Accounting — future)* | `REPLACE_ACCOUNTING_SITE_URL` | Placeholder until accounting site/libraries are stood up |
 
-**Done when:** Leadership agrees on the row count (3 vs 4 sites), sites are created in Microsoft 365, and URLs are filled in above. Then move to **Task 3**.
+**Done when:** Hub and Operations URLs are filled in (Accounting can stay placeholder). Then move to **Task 3**.
 
 **Reference:** [SharePoint / M365 architecture guidelines](/company/resources/sharepoint-m365-architecture-guidelines)
 
@@ -73,7 +69,7 @@ Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark item
 
 ## Task 3 — Libraries + metadata
 
-Implement **PRJ-Active** / **PRJ-Archive** (or one library + **Lifecycle**), **Bids**, **Standards**, **Templates**, accounting supporting libraries, and agreed columns.
+On the **Operations** site: **PRJ-Active** / **PRJ-Archive** (or one library + **Lifecycle**), **Bids** (estimating merged here — no separate site), optional **Standards** / **Templates**. **Accounting** libraries only when the placeholder site is real. Agreed columns: `ProjectID`, `WikiArea`, `Lifecycle`, `DocType`, etc.
 
 ---
 
