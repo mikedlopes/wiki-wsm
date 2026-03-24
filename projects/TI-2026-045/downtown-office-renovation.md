@@ -169,4 +169,4 @@ flowchart TB
 
 ---
 
-*Template: duplicate this page for each new `[project-id]` in Git Storage.*
+*New jobs: copy [template folder](/projects/template-project/project-home) (`projects/template-project/`) to `projects/<ProjectID>/`; this page is the filled example.*

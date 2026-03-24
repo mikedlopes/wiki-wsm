@@ -35,7 +35,8 @@
 ├─ processes/
 ├─ projects/
 │  ├─ dashboard.md
-│  └─ [project-id]/
+│  ├─ template-project/
+│  └─ <ProjectID>/
 ├─ standards/
 ├─ templates/
 └─ lean-tools/

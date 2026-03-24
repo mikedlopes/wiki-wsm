@@ -10,7 +10,7 @@
 
 #### Week 2 - Core operating content
 - Publish PM/design/field/shop/purchasing/accounting SOP baseline
-- Publish project template path under `/projects/[project-id]`
+- Publish project template path under `/projects/template-project` (clone to `/projects/<ProjectID>/`)
 - Publish standards baseline (NFPA 13/25 and CA matrix)
 
 #### Week 3 - Dashboard and workflow integration

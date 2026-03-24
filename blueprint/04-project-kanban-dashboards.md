@@ -1,10 +1,10 @@
 ## Project Management & Lean Kanban Dashboards
 
-### Standard project page structure (`/projects/[project-id]`)
+### Standard project page structure (`/projects/<ProjectID>/`)
 
 ```text
-/projects/[project-id]/
-├─ project-home.md
+/projects/<ProjectID>/
+├─ project-home.md   (or rename; starter lives under /projects/template-project/)
 ├─ kickoff-and-baseline.md
 ├─ submittals-board.md
 ├─ rfi-log.md

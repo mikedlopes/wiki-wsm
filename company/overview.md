@@ -20,6 +20,7 @@ Welcome to the internal company wiki for our **C-16 fire sprinkler subcontractin
 | Day-to-day office rhythms | [Operating cadence](/company/operations/operating-cadence) |
 | Tool stack and data systems | [Systems and tools](/company/resources/systems-and-tools) |
 | SharePoint / M365 site architecture | [Architecture guidelines](/company/resources/sharepoint-m365-architecture-guidelines) |
+| M365 + wiki rollout checklist | [Implementation tasks](/company/resources/m365-wiki-implementation-tasks) |
 | External sprinkler resources | [Industry resources](/company/resources/industry-resources) |
 
 ---

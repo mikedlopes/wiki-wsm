@@ -24,8 +24,9 @@ fire-sprinkler-wiki-content/
 ├─ processes/
 ├─ projects/
 │  ├─ dashboard.md
-│  ├─ [project-id]/
-│  └─ template-project/
+│  ├─ README.md
+│  ├─ template-project/
+│  └─ <ProjectID>/   (example: TI-2026-045/)
 ├─ standards/
 ├─ templates/
 ├─ lean-tools/

@@ -129,9 +129,9 @@ flowchart LR
 
 ## Project spotlight
 
-**Active template job:** [TI-2026-045 — Downtown Office Renovation](/projects/TI-2026-045/downtown-office-renovation)
+**New job starter:** duplicate [Project home template](/projects/template-project/project-home) (folder `projects/template-project/` → `projects/<ProjectID>/`).
 
-Use that page as the **gold-standard** layout for every new `[project-id]` folder in Git Storage.
+**Filled sample:** [TI-2026-045 — Downtown Office Renovation](/projects/TI-2026-045/downtown-office-renovation).
 
 ---
 

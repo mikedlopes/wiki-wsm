@@ -27,4 +27,4 @@ Single reference for company software stack and ownership.
 
 ---
 
-*Cross-links: [SharePoint / M365 architecture guidelines](/company/resources/sharepoint-m365-architecture-guidelines) · [IT systems](/departments/it/overview) · [Document retention](/departments/accounting/document-retention-and-audit-readiness)*
+*Cross-links: [M365 + wiki implementation tasks](/company/resources/m365-wiki-implementation-tasks) · [SharePoint / M365 architecture guidelines](/company/resources/sharepoint-m365-architecture-guidelines) · [IT systems](/departments/it/overview) · [Document retention](/departments/accounting/document-retention-and-audit-readiness)*

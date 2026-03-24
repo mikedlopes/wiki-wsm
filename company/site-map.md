@@ -17,6 +17,7 @@ High-level map of all major wiki sections.
 - [Office handbook](/company/operations/office-handbook)
 - [Systems and tools](/company/resources/systems-and-tools)
 - [SharePoint / M365 architecture guidelines](/company/resources/sharepoint-m365-architecture-guidelines)
+- [M365 + wiki implementation tasks](/company/resources/m365-wiki-implementation-tasks)
 - [Industry resources](/company/resources/industry-resources)
 
 ## 2) Departments
@@ -46,6 +47,7 @@ High-level map of all major wiki sections.
 ## 4) Project workspace
 
 - [Projects dashboard](/projects/dashboard)
+- [New project starter (template)](/projects/template-project/project-home)
 - [Sample project](/projects/TI-2026-045/downtown-office-renovation)
 
 ---

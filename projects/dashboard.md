@@ -1,6 +1,6 @@
 # Projects Hub — Active Portfolio Dashboard
 
-Central landing for **job health**, **financial snapshot**, and **deep links** to each Git-backed project folder (`projects/[project-id]/`).
+Central landing for **job health**, **financial snapshot**, and **deep links** to each Git-backed project folder (`projects/<ProjectID>/`).
 
 ---
 
@@ -63,16 +63,17 @@ flowchart LR
 
 ---
 
-## Gold-standard project page
+## Project page starter + sample
 
-Use **[TI-2026-045 — Downtown Office Renovation](/projects/TI-2026-045/downtown-office-renovation)** as the **clone target** when creating a new `[project-id]` folder in Git Storage.
+- **Blank starter (copy this):** duplicate **`projects/template-project/`** → `projects/<ProjectID>/`, then edit [Project home template](/projects/template-project/project-home).
+- **Filled example:** [TI-2026-045 — Downtown Office Renovation](/projects/TI-2026-045/downtown-office-renovation).
 
 ### New project Git checklist
 
 | Step | Action |
 |------|--------|
-| 1 | Copy `TI-2026-045` folder → rename to new job ID |
-| 2 | Replace all placeholders (`{{JOB_ID}}`, etc.) |
+| 1 | Copy `template-project/` → rename folder to `<ProjectID>` (matches ERP) |
+| 2 | Replace `{{PROJECT_ID}}`, `{{PROJECT_TITLE}}`, and other placeholders |
 | 3 | Update Planner / Power BI embed URLs for the job |
 | 4 | Link from this dashboard table |
 
