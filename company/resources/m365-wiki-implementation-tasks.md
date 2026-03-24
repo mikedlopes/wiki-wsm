@@ -2,10 +2,12 @@
 
 Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark items as you complete them in your runbook or PM tool.
 
+**Current focus:** [Task 2 — SharePoint sites](/company/resources/m365-wiki-implementation-tasks#task-2--sharepoint-sites--urls) (project folder layout in the wiki is **frozen** — no further changes unless the business changes the template).
+
 | # | Task | Status |
 |---|------|--------|
 | 1 | [Project folder convention](/company/resources/m365-wiki-implementation-tasks#task-1--project-folder-convention-git--wiki) | Done |
-| 2 | Decide SharePoint site count (minimal vs split estimating/bids) | Not started |
+| 2 | [SharePoint sites + URLs](/company/resources/m365-wiki-implementation-tasks#task-2--sharepoint-sites--urls) | Not started |
 | 3 | Create libraries + metadata columns (`ProjectID`, `WikiArea`, `Lifecycle`, `DocType`) | Not started |
 | 4 | Align Teams channels with libraries; pin wiki + SharePoint links | Not started |
 | 5 | Backfill deep links on department pages (real SharePoint URLs) | Not started |
@@ -39,9 +41,33 @@ Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark item
 
 ---
 
-## Task 2 — SharePoint site count
+## Task 2 — SharePoint sites + URLs
 
-Use the [architecture guidelines](/company/resources/sharepoint-m365-architecture-guidelines) site table; record your tenant’s final site names and URLs here when decided.
+**Goal:** Decide how many SharePoint **sites** you will maintain (not per job—per *function*), name them, and paste **canonical URLs** here so Task 3–5 can link to real locations.
+
+**Recommended default for a ~30-person internal shop (adjust names to your tenant):**
+
+| # | Site function | Typical contents | Owner (who decides access) |
+|---|----------------|------------------|----------------------------|
+| 1 | **Organization / intranet hub** | Company links, news, optional HR/IT entry points | Admin / IT |
+| 2 | **Operations & projects** | **PRJ-Active** / **PRJ-Archive** (or one library + Lifecycle); project roots `/<ProjectID>-<ClientShort>/` | Operations / PM |
+| 3 | **Estimating & bids** (can merge with #2 if same owners) | Bids library, bid status list | Estimating / BD |
+| 4 | **Accounting / finance** (restricted) | Invoices–receipts supporting docs, month-end, audit binders | Accounting |
+
+**Merge options:** Combine **Estimating & bids** into **Operations** if you want fewer URLs; keep **Accounting** separate for permissions.
+
+**Record your tenant (replace placeholders after sites exist):**
+
+| Site display name | SharePoint site URL | Notes |
+|-------------------|---------------------|--------|
+| *(e.g. WSM Intranet)* | `REPLACE_HUB_SITE_URL` | |
+| *(e.g. WSM Operations)* | `REPLACE_OPERATIONS_SITE_URL` | Job document libraries live here |
+| *(e.g. WSM Estimating)* | `REPLACE_ESTIMATING_SITE_URL` | Or `—` if merged with Operations |
+| *(e.g. WSM Accounting)* | `REPLACE_ACCOUNTING_SITE_URL` | Restricted membership |
+
+**Done when:** Leadership agrees on the row count (3 vs 4 sites), sites are created in Microsoft 365, and URLs are filled in above. Then move to **Task 3**.
+
+**Reference:** [SharePoint / M365 architecture guidelines](/company/resources/sharepoint-m365-architecture-guidelines)
 
 ---
 
