@@ -1,6 +1,7 @@
 # TI-2026-045 — Downtown Office Renovation
 
 **Owner:** Meridian Properties  
+**Client short (folder suffix):** `MRDN` (example—for `TI-2026-045-MRDN` document root)  
 **GC:** Summit Builders Inc.  
 **Contract:** $1,847,500 (revised budget $1,902,400 with CO-003 pending)  
 **PM:** Ana Rivera · **Super:** Chris Okonkwo · **PE:** Priya Shah  
@@ -158,14 +159,36 @@ flowchart TB
 
 ---
 
+## Project file tree (sample document root)
+
+Sample **SharePoint / file-share** layout (client short is illustrative—define yours in PM kickoff):
+
+```text
+/TI-2026-045-MRDN/
+  00_Admin_Contracts_Insurance/
+  01_Design_Calcs_ShopDrawings/
+  02_Submittals/
+  03_RFIs_ChangeOrders/
+  04_Permits_AHJ/
+  05_Field_Site/
+  06_Testing_Inspection/
+  07_Closeout/
+  _QuickLinks/
+```
+
+Full template + “what goes where”: [Project home template](/projects/template-project/project-home).
+
+---
+
 ## Quick links
 
 | Resource | Link / location |
 |----------|-----------------|
 | ERP job | `TI-2026-045` |
+| Document root (example) | `TI-2026-045-MRDN` |
 | Procore / PM tool | Project workspace |
 | BIM 360 / ACC | Model folder `FP/2026/TI-045` |
-| Job shared drive | `\\fileserver\jobs\2026\TI-2026-045` |
+| Job shared drive | `\\fileserver\jobs\2026\TI-2026-045-MRDN` |
 
 ---
 

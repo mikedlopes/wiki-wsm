@@ -25,15 +25,17 @@ Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark item
 | **No placeholder folder names** | Do not use a literal `[project-id]` directory in Git—brackets are documentation shorthand only. |
 | **Blank starter** | Duplicate from `projects/template-project/` (starter page: [Project home template](/projects/template-project/project-home)). |
 | **Worked example** | [TI-2026-045 — Downtown Office Renovation](/projects/TI-2026-045/downtown-office-renovation) shows a filled-in page using the same layout. |
+| **Document library root** | `/<ProjectID>-<ClientShort>/` with folders `00_`–`07_` and optional `_QuickLinks/` (see [template](/projects/template-project/project-home)). `<ClientShort>` is an agreed abbreviation; it **extends** the wiki folder name, does not replace it. |
 
 **New job checklist:**
 
 1. Copy `projects/template-project/` → `projects/<ProjectID>/`.
 2. Rename `project-home.md` if you prefer one main file per job (e.g. `downtown-office-renovation.md`); update links.
-3. Replace `{{PROJECT_ID}}`, `{{PROJECT_TITLE}}`, and all `REPLACE_*` embed placeholders.
-4. Add a row on [Projects dashboard](/projects/dashboard) and link from PM/field pages as needed.
+3. Replace `{{PROJECT_ID}}`, `{{CLIENT_SHORT}}`, `{{PROJECT_TITLE}}`, and all `REPLACE_*` embed placeholders.
+4. In **SharePoint** (or file share), create `/<ProjectID>-<ClientShort>/` and the numbered subfolders per the template.
+5. Add a row on [Projects dashboard](/projects/dashboard) and link from PM/field pages as needed.
 
-**SharePoint:** Use the same `<ProjectID>` in library metadata (see architecture guidelines).
+**SharePoint:** Use the same `<ProjectID>` in library metadata; file tree root uses `<ProjectID>-<ClientShort>` (see architecture guidelines).
 
 ---
 

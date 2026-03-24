@@ -73,9 +73,10 @@ flowchart LR
 | Step | Action |
 |------|--------|
 | 1 | Copy `template-project/` → rename folder to `<ProjectID>` (matches ERP) |
-| 2 | Replace `{{PROJECT_ID}}`, `{{PROJECT_TITLE}}`, and other placeholders |
-| 3 | Update Planner / Power BI embed URLs for the job |
-| 4 | Link from this dashboard table |
+| 2 | Replace `{{PROJECT_ID}}`, `{{CLIENT_SHORT}}`, `{{PROJECT_TITLE}}`, and other placeholders |
+| 3 | Create document library root `/<ProjectID>-<ClientShort>/` with `00_`–`07_` folders (and `_QuickLinks/` if used) — see [template](/projects/template-project/project-home) |
+| 4 | Update Planner / Power BI embed URLs for the job |
+| 5 | Link from this dashboard table |
 
 ---
 
