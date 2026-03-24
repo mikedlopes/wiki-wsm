@@ -19,6 +19,7 @@ Welcome to the internal company wiki for our **C-16 fire sprinkler subcontractin
 | New hire onboarding | [Onboarding home](/company/onboarding/overview) |
 | Day-to-day office rhythms | [Operating cadence](/company/operations/operating-cadence) |
 | Tool stack and data systems | [Systems and tools](/company/resources/systems-and-tools) |
+| SharePoint / M365 site architecture | [Architecture guidelines](/company/resources/sharepoint-m365-architecture-guidelines) |
 | External sprinkler resources | [Industry resources](/company/resources/industry-resources) |
 
 ---

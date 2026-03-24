@@ -16,6 +16,7 @@ High-level map of all major wiki sections.
 - [Operating cadence](/company/operations/operating-cadence)
 - [Office handbook](/company/operations/office-handbook)
 - [Systems and tools](/company/resources/systems-and-tools)
+- [SharePoint / M365 architecture guidelines](/company/resources/sharepoint-m365-architecture-guidelines)
 - [Industry resources](/company/resources/industry-resources)
 
 ## 2) Departments
