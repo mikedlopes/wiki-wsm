@@ -59,7 +59,7 @@ This section mirrors the current wiki shape so users can recognize the same ment
 | `/templates/*` | Controlled Templates library with versioning | Keep blank forms consistent and current. |
 | `/lean-tools/*` | Wiki Lean section + optional Lists/Planner boards | Maintain Lean guidance while tying to actionable boards. |
 
-**Convention:** Live **wiki** folders use `projects/<ProjectID>/` (e.g. `TI-2026-045`). New jobs are cloned from `projects/template-project/` — not from a literal `[project-id]` folder name. **Project documents** in SharePoint (or on a file share) use a parallel root `/<ProjectID>-<ClientShort>/` with numbered subfolders `00_`–`07_` and optional `_QuickLinks/` — see [Project home template](/projects/template-project/project-home).
+**Convention:** Live **wiki** folders use `projects/<ProjectID>/` (e.g. `TI-2026-045`). New jobs are cloned from `projects/template-project/` — not from a literal `[project-id]` folder name. **Project documents** in SharePoint (or on a file share) use a parallel root `/<ProjectID>-<ClientShort>/` with the eight company-standard folders (Bid, Billing, Change Estimates, Contract, Drawings, Job Setup, Prelien Info, Template Forms) and optional `_QuickLinks/` — see [Project home template](/projects/template-project/project-home).
 
 ---
 

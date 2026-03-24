@@ -165,14 +165,14 @@ Sample **SharePoint / file-share** layout (client short is illustrative—define
 
 ```text
 /TI-2026-045-MRDN/
-  00_Admin_Contracts_Insurance/
-  01_Design_Calcs_ShopDrawings/
-  02_Submittals/
-  03_RFIs_ChangeOrders/
-  04_Permits_AHJ/
-  05_Field_Site/
-  06_Testing_Inspection/
-  07_Closeout/
+  Bid/
+  Billing/
+  Change Estimates/
+  Contract/
+  Drawings/
+  Job Setup/
+  Prelien Info/
+  Template Forms/
   _QuickLinks/
 ```
 

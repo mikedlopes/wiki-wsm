@@ -10,18 +10,18 @@
 
 ## Document library / file-share root (not the wiki path)
 
-For SharePoint **PRJ-Active** (or file server), each job uses a **numbered subfolder tree** under a root named with a client short code:
+For SharePoint **PRJ-Active** (or file server), each job uses the **same eight folders** as the current project template, under a root named with a client short code:
 
 ```text
 /<ProjectID>-<ClientShort>/
-  00_Admin_Contracts_Insurance/
-  01_Design_Calcs_ShopDrawings/
-  02_Submittals/
-  03_RFIs_ChangeOrders/
-  04_Permits_AHJ/
-  05_Field_Site/
-  06_Testing_Inspection/
-  07_Closeout/
+  Bid/
+  Billing/
+  Change Estimates/
+  Contract/
+  Drawings/
+  Job Setup/
+  Prelien Info/
+  Template Forms/
   _QuickLinks/    ← optional shortcut files (wiki, Planner, Teams)
 ```
 
