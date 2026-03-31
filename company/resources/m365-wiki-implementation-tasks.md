@@ -2,12 +2,12 @@
 
 Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark items as you complete them in your runbook or PM tool.
 
-**Current focus:** [Task 2 — SharePoint sites](/company/resources/m365-wiki-implementation-tasks#task-2--sharepoint-sites--urls) (project folder layout in the wiki is **frozen** — no further changes unless the business changes the template).
+**Current focus:** [Task 3 — Libraries + metadata](/company/resources/m365-wiki-implementation-tasks#task-3--libraries--metadata) (project folder layout in the wiki is **frozen** — no further changes unless the business changes the template).
 
 | # | Task | Status |
 |---|------|--------|
 | 1 | [Project folder convention](/company/resources/m365-wiki-implementation-tasks#task-1--project-folder-convention-git--wiki) | Done |
-| 2 | [SharePoint sites + URLs](/company/resources/m365-wiki-implementation-tasks#task-2--sharepoint-sites--urls) | In progress |
+| 2 | [SharePoint sites + URLs](/company/resources/m365-wiki-implementation-tasks#task-2--sharepoint-sites--urls) | Done |
 | 3 | Create libraries + metadata columns (`ProjectID`, `WikiArea`, `Lifecycle`, `DocType`) | Not started |
 | 4 | Align Teams channels with libraries; pin wiki + SharePoint links | Not started |
 | 5 | Backfill deep links on department pages (real SharePoint URLs) | Not started |
@@ -51,15 +51,15 @@ Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark item
 |----------|----------------|-----------------|
 | **Ship first** | **Organization / intranet hub** | Company links, news, optional HR/IT entry points |
 | **Ship first** | **Operations & projects** | **Everything delivery + preconstruction:** **PRJ-Active** / **PRJ-Archive**, project roots `/<ProjectID>-<ClientShort>/`, **Bids** library (and optional bid list) — **no separate Estimating site** |
-| **Placeholder** | **Accounting / finance** | Reserved for restricted AP/AR supporting docs later; **not required to launch** hub + operations. Use `REPLACE_ACCOUNTING_SITE_URL` or `TBD` until ready |
+| **Placeholder** | **Accounting / finance** | Reserved for restricted AP/AR supporting docs later; **not required to launch** hub + operations. URL `TBD` in table below until ready |
 
 **Record your tenant (replace placeholders when sites exist):**
 
 | Site display name | SharePoint site URL | Notes |
 |-------------------|---------------------|--------|
-| *(e.g. WSM Intranet)* | `REPLACE_HUB_SITE_URL` | |
-| *(e.g. WSM Operations)* | `REPLACE_OPERATIONS_SITE_URL` | Jobs + **Bids** live here |
-| *(Accounting — future)* | `REPLACE_ACCOUNTING_SITE_URL` | Placeholder until accounting site/libraries are stood up |
+| **WSM Hub** | https://westatesmechanical.sharepoint.com/sites/WSMHub | Organization / intranet hub |
+| **WSM Projects** | https://westatesmechanical.sharepoint.com/sites/WSMProjects | Operations — job libraries + **Bids** (Task 3) |
+| *(Accounting — future)* | `TBD` | Create site when ready; paste URL here |
 
 ---
 
@@ -83,11 +83,11 @@ Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark item
 2. Choose **Team site** (strong default for **document libraries**, lists, and future **Teams** linkage). If your org restricts team sites, use another site type your admin allows—libraries work the same.
 3. Set **name** and **URL** (e.g. `WSM-Operations`). Avoid spaces in the URL slug.
 4. Add **site owners** (IT + operations lead) and **members** (broader staff who need project files) per least privilege.
-5. Copy the **root site URL** → paste as `REPLACE_OPERATIONS_SITE_URL` above.
+5. Copy the **root site URL** → record in the table above (live tenant: **WSM Projects**).
 
 #### C. Accounting (placeholder)
 
-- Leave **`REPLACE_ACCOUNTING_SITE_URL`** as `TBD` until Task 6 / accounting is ready, **or** create a **restricted** team site now with **no** broad membership and paste the URL.
+- Leave **`TBD`** in the table until Task 6 / accounting is ready, **or** create a **restricted** team site now with **no** broad membership and paste the URL into the table.
 
 #### D. Verify before Task 3
 
@@ -106,7 +106,9 @@ Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark item
 
 ## Task 3 — Libraries + metadata
 
-On the **Operations** site: **PRJ-Active** / **PRJ-Archive** (or one library + **Lifecycle**), **Bids** (estimating merged here — no separate site), optional **Standards** / **Templates**. **Accounting** libraries only when the placeholder site is real. Agreed columns: `ProjectID`, `WikiArea`, `Lifecycle`, `DocType`, etc.
+On **[WSM Projects](https://westatesmechanical.sharepoint.com/sites/WSMProjects)** (operations site): **PRJ-Active** / **PRJ-Archive** (or one library + **Lifecycle**), **Bids** (estimating merged here — no separate site), optional **Standards** / **Templates**. **Accounting** libraries only when the placeholder site is real. Agreed columns: `ProjectID`, `WikiArea`, `Lifecycle`, `DocType`, etc.
+
+**Hub (reference):** [WSM Hub](https://westatesmechanical.sharepoint.com/sites/WSMHub)
 
 ---
 
