@@ -103,6 +103,7 @@ For a ~30-person internal shop, prefer **Teams mapped to workstreams** (e.g. Ope
 ## Related wiki pages
 
 - [M365 + wiki implementation tasks](/company/resources/m365-wiki-implementation-tasks)
+- [SharePoint navigation — wiki parity](/company/resources/sharepoint-navigation-wiki-parity)
 - [Systems and tools](/company/resources/systems-and-tools)
 - [Site map](/company/site-map)
 - [Document retention and audit readiness](/departments/accounting/document-retention-and-audit-readiness)

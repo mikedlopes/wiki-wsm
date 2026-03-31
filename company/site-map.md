@@ -18,6 +18,7 @@ High-level map of all major wiki sections.
 - [Systems and tools](/company/resources/systems-and-tools)
 - [SharePoint / M365 architecture guidelines](/company/resources/sharepoint-m365-architecture-guidelines)
 - [M365 + wiki implementation tasks](/company/resources/m365-wiki-implementation-tasks)
+- [SharePoint nav — wiki parity (WSM Projects)](/company/resources/sharepoint-navigation-wiki-parity)
 - [Industry resources](/company/resources/industry-resources)
 
 ## 2) Departments
