@@ -110,7 +110,7 @@ Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark item
 
 **Goal:** Libraries for **active jobs**, **archive**, **bids**, and (optional) **standards/templates** — plus **metadata columns** so views and Power Automate stay usable without deep folder paths.
 
-**As built:** **Project Documents** (job roots), **Bids**, **Standards**, **Templates**, **Forms** — see §3.5 for URLs.
+**As built:** **Projects** (job roots), **Bids**, **Standards**, **Templates**, **Forms** — see §3.5 for URLs.
 
 ---
 
@@ -121,7 +121,7 @@ Pick **one** approach (both are valid):
 | Pattern | What you create | Best when |
 |---------|-----------------|-----------|
 | **A — Two libraries** | **PRJ-Active** + **PRJ-Archive** | Clear mental split; move whole job folders when closing |
-| **B — One library** | e.g. **Project Documents** + column **Lifecycle** = `Active` / `Closeout` / `Archive` | Fewer URLs; rely on views and metadata |
+| **B — One library** | e.g. **Projects** + column **Lifecycle** = `Active` / `Closeout` / `Archive` | Fewer URLs; rely on views and metadata |
 
 Job **folder names** inside the library follow the wiki: `/<ProjectID>-<ClientShort>/` with the numbered + commercial subfolders (see [Project home template](/projects/template-project/project-home)).
 
@@ -134,12 +134,12 @@ Job **folder names** inside the library follow the wiki: `/<ProjectID>-<ClientSh
 1. Open [WSM Projects](https://westatesmechanical.sharepoint.com/sites/WSMProjects).
 2. **Gear** → **Site contents** (or **+ New** → **Document library** from the nav, depending on layout).
 3. **+ New** → **Document library** → name it exactly (examples):
-   - `PRJ-Active` and `PRJ-Archive` **or** a single `Project Documents` (if using pattern B).
+   - `PRJ-Active` and `PRJ-Archive` **or** a single **`Projects`** library (if using pattern B).
    - `Bids` — estimating / bid files, addenda, **not** the same as live job folders.
    - *(Optional)* `Standards` — controlled NFPA / company criteria PDFs (versioning on).
    - *(Optional)* `Templates` — approved blank forms (versioning on; most users read-only).
 
-4. **Default “Documents”** library: either **rename** to fit your pattern or **leave** as general scratch — avoid mixing unrelated content with **PRJ-*** if you want clean permissions later.
+4. **Default “Documents”** library: **rename** to **Projects** (or **PRJ-Active**) for job files, or **leave** a separate scratch library — avoid mixing unrelated content with job folders.
 
 5. **Bids:** keep **separate** from PRJ so retention and guest access (if any) stay simpler.
 
@@ -151,7 +151,7 @@ Microsoft: [Create a document library](https://learn.microsoft.com/en-us/sharepo
 
 Add columns via **Library settings** → **Create column** (or **Add column** in grid view). Use **consistent internal names** (no spaces in API/Power Automate).
 
-**On PRJ-Active / PRJ-Archive / Project Documents** (apply to both if two libraries):
+**On PRJ-Active / PRJ-Archive / Projects** (apply to both if two libraries):
 
 | Column | Type | Values / notes |
 |--------|------|----------------|
@@ -185,14 +185,14 @@ Tenant: **westatesmechanical.sharepoint.com** · Site: **WSMProjects**. Paths be
 
 | Library | URL |
 |---------|-----|
-| **Project Documents** *(primary project / job files)* | https://westatesmechanical.sharepoint.com/sites/WSMProjects/Project%20Documents/Forms/AllItems.aspx |
-| **PRJ-Archive** *(if split later)* | `—` *(single **Project Documents** library for now)* |
+| **Projects** *(primary project / job files)* | https://westatesmechanical.sharepoint.com/sites/WSMProjects/Projects/Forms/AllItems.aspx |
+| **PRJ-Archive** *(if split later)* | `—` *(single **Projects** library for now)* |
 | **Bids** | https://westatesmechanical.sharepoint.com/sites/WSMProjects/Bids/Forms/AllItems.aspx |
 | **Standards** | https://westatesmechanical.sharepoint.com/sites/WSMProjects/Standards/Forms/AllItems.aspx |
 | **Templates** | https://westatesmechanical.sharepoint.com/sites/WSMProjects/Templates/Forms/AllItems.aspx |
 | **Forms** | https://westatesmechanical.sharepoint.com/sites/WSMProjects/Forms/Forms/AllItems.aspx |
 
-**Done when:** Libraries exist, metadata columns applied as in §3.3, and job folders can be created under **Project Documents**. Then move to **Task 4**.
+**Done when:** Libraries exist, metadata columns applied as in §3.3, and job folders can be created under **Projects**. Then move to **Task 4**.
 
 **Reference:** [SharePoint / M365 architecture guidelines — metadata](/company/resources/sharepoint-m365-architecture-guidelines#metadata-alignment-wiki-mental-model)
 
@@ -211,7 +211,7 @@ Tenant: **westatesmechanical.sharepoint.com** · Site: **WSMProjects**. Paths be
 | Do | Don’t |
 |----|--------|
 | Tie **one** Team to **[WSM Projects](https://westatesmechanical.sharepoint.com/sites/WSMProjects)** (SharePoint is already the file home) | Create **dozens** of project Teams for every job ID |
-| Pin **wiki** + **Project Documents** + **Bids** as tabs or pinned posts | Duplicate every wiki page inside Teams |
+| Pin **wiki** + **Projects** + **Bids** as tabs or pinned posts | Duplicate every wiki page inside Teams |
 | Use **channels** for workstreams (e.g. Bids, Field) only if traffic justifies it | Require everyone to use Teams for **all** chat — email still exists |
 
 ---
@@ -247,7 +247,7 @@ In each channel you use, **+** next to the tabs → add:
 
 | Tab type | What to point at |
 |----------|------------------|
-| **SharePoint** | [Project Documents](https://westatesmechanical.sharepoint.com/sites/WSMProjects/Project%20Documents/Forms/AllItems.aspx) (or site root and browse) |
+| **SharePoint** | [Projects](https://westatesmechanical.sharepoint.com/sites/WSMProjects/Projects/Forms/AllItems.aspx) (or site root and browse) |
 | **SharePoint** *(second tab)* | [Bids](https://westatesmechanical.sharepoint.com/sites/WSMProjects/Bids/Forms/AllItems.aspx) |
 | **Website** | Wiki **Start here** — `REPLACE_WIKI_BASE/company/start-here` |
 | **Website** *(optional)* | Wiki **Projects dashboard** — `REPLACE_WIKI_BASE/projects/dashboard` |
@@ -262,7 +262,7 @@ Rename tabs clearly: **“Project files”**, **“Bids”**, **“Wiki — Star
 Pin one message with bullet links:
 
 - [Start here](REPLACE_WIKI_BASE/company/start-here) · [Site map](REPLACE_WIKI_BASE/company/site-map) · [Projects dashboard](REPLACE_WIKI_BASE/projects/dashboard)
-- [WSM Projects — Project Documents](https://westatesmechanical.sharepoint.com/sites/WSMProjects/Project%20Documents/Forms/AllItems.aspx) · [Bids](https://westatesmechanical.sharepoint.com/sites/WSMProjects/Bids/Forms/AllItems.aspx)
+- [WSM Projects — Projects](https://westatesmechanical.sharepoint.com/sites/WSMProjects/Projects/Forms/AllItems.aspx) · [Bids](https://westatesmechanical.sharepoint.com/sites/WSMProjects/Bids/Forms/AllItems.aspx)
 
 Replace `REPLACE_WIKI_BASE` with your live Wiki.js root (no trailing slash).
 

@@ -64,7 +64,7 @@ Narrative lives in **Wiki.js**. On **SharePoint**, create **document libraries**
 
 | Nav / Hero label | SharePoint type | Purpose (matches wiki + Task 3) |
 |------------------|-----------------|----------------------------------|
-| **Projects** | **Document library** `PRJ-Active` (and optional `PRJ-Archive`) *or* one `Project Documents` + **Lifecycle** column | Job roots `/<ProjectID>-<ClientShort>/` — see [Project home template](/projects/template-project/project-home) |
+| **Projects** | **Document library** `PRJ-Active` (and optional `PRJ-Archive`) *or* one **`Projects`** library + **Lifecycle** column | Job roots `/<ProjectID>-<ClientShort>/` — see [Project home template](/projects/template-project/project-home) |
 | **Bids** | **Document library** `Bids` | Estimating / bid files ([Estimating](/departments/estimating/overview), [Bidding](/departments/bidding/overview)) |
 | **Standards** | **Document library** `Standards` *(optional)* | Controlled PDFs that mirror [Standards](/standards/overview); wiki stays narrative |
 | **Templates** | **Document library** `Templates` *(optional)* | Controlled blanks that mirror [Templates](/templates/template-meeting-notes) |
