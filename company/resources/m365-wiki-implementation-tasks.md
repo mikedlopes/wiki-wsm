@@ -9,7 +9,7 @@ Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark item
 | 1 | [Project folder convention](/company/resources/m365-wiki-implementation-tasks#task-1--project-folder-convention-git--wiki) | Done |
 | 2 | [SharePoint sites + URLs](/company/resources/m365-wiki-implementation-tasks#task-2--sharepoint-sites--urls) | Done |
 | 3 | [Libraries + metadata](/company/resources/m365-wiki-implementation-tasks#task-3--libraries--metadata) | Done |
-| 4 | Align Teams channels with libraries; pin wiki + SharePoint links | Not started |
+| 4 | [Teams alignment](/company/resources/m365-wiki-implementation-tasks#task-4--teams-alignment) | In progress |
 | 5 | Backfill deep links on department pages (real SharePoint URLs) | Not started |
 | 6 | Confirm invoice/receipt attachment pattern (ERP vs ERP + SharePoint) with accounting | Not started |
 
@@ -200,7 +200,85 @@ Tenant: **westatesmechanical.sharepoint.com** · Site: **WSMProjects**. Paths be
 
 ## Task 4 — Teams alignment
 
-Map Teams to workstreams; pin libraries and wiki anchors (Start here, dashboard, department overviews).
+**Goal:** One **Microsoft Team** (or a small number) tied to **WSM Projects** and the **wiki**, so people open **Teams** and reach **files + procedures** without hunting. **Avoid** a new Team per job unless a contract forces it.
+
+**Sites (reference):** [WSM Hub](https://westatesmechanical.sharepoint.com/sites/WSMHub) · [WSM Projects](https://westatesmechanical.sharepoint.com/sites/WSMProjects)
+
+---
+
+### 4.1 — Principles
+
+| Do | Don’t |
+|----|--------|
+| Tie **one** Team to **[WSM Projects](https://westatesmechanical.sharepoint.com/sites/WSMProjects)** (SharePoint is already the file home) | Create **dozens** of project Teams for every job ID |
+| Pin **wiki** + **Project Documents** + **Bids** as tabs or pinned posts | Duplicate every wiki page inside Teams |
+| Use **channels** for workstreams (e.g. Bids, Field) only if traffic justifies it | Require everyone to use Teams for **all** chat — email still exists |
+
+---
+
+### 4.2 — Create or connect the Team
+
+**If your SharePoint site is already a Microsoft 365 Group / Team site:**  
+Open **Microsoft Teams** → **Teams** → **Join or create a team** → **Create a team** → **From a group or team** → select the group that backs **WSM Projects** (if listed). If a Team already exists for that group, **use it**.
+
+**If no Team exists yet:**  
+**Teams** → **Create a team** → **From scratch** → **Private** → name e.g. **WSM Projects** → add owners/members → in the final step, **link** to the existing SharePoint site if the wizard offers **“Add Microsoft SharePoint site”** or associate the default channel Files tab to [WSM Projects](https://westatesmechanical.sharepoint.com/sites/WSMProjects).
+
+**Optional second Team for company-wide:**  
+A small **WSM Hub** or **WSM General** Team linked to [WSM Hub](https://westatesmechanical.sharepoint.com/sites/WSMHub) — only if leadership wants announcements/chat separate from project noise.
+
+Use **Teams** → **Help** (*?*) → search *create team from group* or *SharePoint site* to match your tenant’s UI. Microsoft often changes the exact menu names.
+
+---
+
+### 4.3 — Channels (keep it small)
+
+| Channel | Purpose |
+|---------|---------|
+| **General** | Announcements, links to wiki **Start here** and **Projects dashboard** |
+| *(Optional)* **Bids** | Estimating / pursuit chatter; pin **Bids** library |
+| *(Optional)* **Field / PM** | Only if volume is high; otherwise **General** + wiki |
+
+---
+
+### 4.4 — Tabs to add (WSM Projects Team)
+
+In each channel you use, **+** next to the tabs → add:
+
+| Tab type | What to point at |
+|----------|------------------|
+| **SharePoint** | [Project Documents](https://westatesmechanical.sharepoint.com/sites/WSMProjects/Project%20Documents/Forms/AllItems.aspx) (or site root and browse) |
+| **SharePoint** *(second tab)* | [Bids](https://westatesmechanical.sharepoint.com/sites/WSMProjects/Bids/Forms/AllItems.aspx) |
+| **Website** | Wiki **Start here** — `REPLACE_WIKI_BASE/company/start-here` |
+| **Website** *(optional)* | Wiki **Projects dashboard** — `REPLACE_WIKI_BASE/projects/dashboard` |
+| **Planner** | Your portfolio or job plan (when embed IDs exist) |
+
+Rename tabs clearly: **“Project files”**, **“Bids”**, **“Wiki — Start here”**.
+
+---
+
+### 4.5 — Pinned post (General channel)
+
+Pin one message with bullet links:
+
+- [Start here](REPLACE_WIKI_BASE/company/start-here) · [Site map](REPLACE_WIKI_BASE/company/site-map) · [Projects dashboard](REPLACE_WIKI_BASE/projects/dashboard)
+- [WSM Projects — Project Documents](https://westatesmechanical.sharepoint.com/sites/WSMProjects/Project%20Documents/Forms/AllItems.aspx) · [Bids](https://westatesmechanical.sharepoint.com/sites/WSMProjects/Bids/Forms/AllItems.aspx)
+
+Replace `REPLACE_WIKI_BASE` with your live Wiki.js root (no trailing slash).
+
+---
+
+### 4.6 — Record (fill when done)
+
+| Item | Value |
+|------|--------|
+| Team display name | `REPLACE_TEAMS_PROJECTS_TEAM_NAME` |
+| Link to open Team in Teams / web | `REPLACE_TEAMS_DEEP_LINK_OR_URL` |
+| Notes | e.g. linked to M365 group for WSM Projects |
+
+**Done when:** Team exists, **General** has pinned links + at least **Project files** and **Wiki** access via tabs or posts, and owners know who adds members. Then move to **Task 5**.
+
+**Reference:** [SharePoint / M365 architecture guidelines — Teams](/company/resources/sharepoint-m365-architecture-guidelines#teams-alignment-lightweight)
 
 ---
 
