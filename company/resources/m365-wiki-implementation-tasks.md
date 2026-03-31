@@ -2,13 +2,13 @@
 
 Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark items as you complete them in your runbook or PM tool.
 
-**Current focus:** [Task 3 — Libraries + metadata](/company/resources/m365-wiki-implementation-tasks#task-3--libraries--metadata) (project folder layout in the wiki is **frozen** — no further changes unless the business changes the template).
+**Current focus:** [Task 4 — Teams alignment](/company/resources/m365-wiki-implementation-tasks#task-4--teams-alignment) (project folder layout in the wiki is **frozen** — no further changes unless the business changes the template).
 
 | # | Task | Status |
 |---|------|--------|
 | 1 | [Project folder convention](/company/resources/m365-wiki-implementation-tasks#task-1--project-folder-convention-git--wiki) | Done |
 | 2 | [SharePoint sites + URLs](/company/resources/m365-wiki-implementation-tasks#task-2--sharepoint-sites--urls) | Done |
-| 3 | [Libraries + metadata](/company/resources/m365-wiki-implementation-tasks#task-3--libraries--metadata) | In progress |
+| 3 | [Libraries + metadata](/company/resources/m365-wiki-implementation-tasks#task-3--libraries--metadata) | Done |
 | 4 | Align Teams channels with libraries; pin wiki + SharePoint links | Not started |
 | 5 | Backfill deep links on department pages (real SharePoint URLs) | Not started |
 | 6 | Confirm invoice/receipt attachment pattern (ERP vs ERP + SharePoint) with accounting | Not started |
@@ -110,6 +110,8 @@ Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark item
 
 **Goal:** Libraries for **active jobs**, **archive**, **bids**, and (optional) **standards/templates** — plus **metadata columns** so views and Power Automate stay usable without deep folder paths.
 
+**As built:** **Project Documents** (job roots), **Bids**, **Standards**, **Templates**, **Forms** — see §3.5 for URLs.
+
 ---
 
 ### 3.1 — Choose project storage pattern
@@ -177,19 +179,20 @@ On each PRJ library, create a **view** grouped or filtered by **ProjectID** or *
 
 ---
 
-### 3.5 — Record library links (fill after creation)
+### 3.5 — Record library links (WSM Projects)
 
-Paste each library’s **root URL** (open the library → copy address bar up to the library path, before `/Forms/` if present).
+Tenant: **westatesmechanical.sharepoint.com** · Site: **WSMProjects**. Paths below use the default **All items** view (`…/Forms/AllItems.aspx`). A library named **Forms** shows `…/Forms/Forms/AllItems.aspx` (folder name repeats).
 
 | Library | URL |
 |---------|-----|
-| PRJ-Active *(or primary project library)* | `REPLACE_PRJ_ACTIVE_LIBRARY_URL` |
-| PRJ-Archive *(if used)* | `REPLACE_PRJ_ARCHIVE_LIBRARY_URL` |
-| Bids | `REPLACE_BIDS_LIBRARY_URL` |
-| Standards *(optional)* | `REPLACE_STANDARDS_LIBRARY_URL` or `—` |
-| Templates *(optional)* | `REPLACE_TEMPLATES_LIBRARY_URL` or `—` |
+| **Project Documents** *(primary project / job files)* | https://westatesmechanical.sharepoint.com/sites/WSMProjects/Project%20Documents/Forms/AllItems.aspx |
+| **PRJ-Archive** *(if split later)* | `—` *(single **Project Documents** library for now)* |
+| **Bids** | https://westatesmechanical.sharepoint.com/sites/WSMProjects/Bids/Forms/AllItems.aspx |
+| **Standards** | https://westatesmechanical.sharepoint.com/sites/WSMProjects/Standards/Forms/AllItems.aspx |
+| **Templates** | https://westatesmechanical.sharepoint.com/sites/WSMProjects/Templates/Forms/AllItems.aspx |
+| **Forms** | https://westatesmechanical.sharepoint.com/sites/WSMProjects/Forms/Forms/AllItems.aspx |
 
-**Done when:** At least **one** project library + **Bids** exist, core columns are on the project library, URLs are filled above, and a test folder `TEST-0000-TEST` can be created. Then move to **Task 4**.
+**Done when:** Libraries exist, metadata columns applied as in §3.3, and job folders can be created under **Project Documents**. Then move to **Task 4**.
 
 **Reference:** [SharePoint / M365 architecture guidelines — metadata](/company/resources/sharepoint-m365-architecture-guidelines#metadata-alignment-wiki-mental-model)
 
