@@ -87,6 +87,7 @@ Optional columns on libraries help navigation without exploding folder trees:
 | Column (example) | Use |
 |--------------------|-----|
 | `ProjectID` | TI-2026-045 style IDs; ties to wiki project pages. |
+| `ClientShort` | Matches job folder root `ProjectID-ClientShort` in PRJ libraries. |
 | `WikiArea` | `company` · `departments` · `processes` · `projects` · `standards` · `templates` · `lean` · `blueprint` — for reporting, not for duplicating wiki URLs. |
 | `Lifecycle` | Active · Closeout · Archive — pairs with PRJ-Active / PRJ-Archive pattern. |
 | `DocType` | Submittal · RFI · Drawing · Invoice-Receipt · Bid · etc. |

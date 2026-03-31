@@ -8,7 +8,7 @@ Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark item
 |---|------|--------|
 | 1 | [Project folder convention](/company/resources/m365-wiki-implementation-tasks#task-1--project-folder-convention-git--wiki) | Done |
 | 2 | [SharePoint sites + URLs](/company/resources/m365-wiki-implementation-tasks#task-2--sharepoint-sites--urls) | Done |
-| 3 | Create libraries + metadata columns (`ProjectID`, `WikiArea`, `Lifecycle`, `DocType`) | Not started |
+| 3 | [Libraries + metadata](/company/resources/m365-wiki-implementation-tasks#task-3--libraries--metadata) | In progress |
 | 4 | Align Teams channels with libraries; pin wiki + SharePoint links | Not started |
 | 5 | Backfill deep links on department pages (real SharePoint URLs) | Not started |
 | 6 | Confirm invoice/receipt attachment pattern (ERP vs ERP + SharePoint) with accounting | Not started |
@@ -106,9 +106,92 @@ Ordered checklist for standing up SharePoint/M365 alongside this wiki. Mark item
 
 ## Task 3 — Libraries + metadata
 
-On **[WSM Projects](https://westatesmechanical.sharepoint.com/sites/WSMProjects)** (operations site): **PRJ-Active** / **PRJ-Archive** (or one library + **Lifecycle**), **Bids** (estimating merged here — no separate site), optional **Standards** / **Templates**. **Accounting** libraries only when the placeholder site is real. Agreed columns: `ProjectID`, `WikiArea`, `Lifecycle`, `DocType`, etc.
+**Where:** **[WSM Projects](https://westatesmechanical.sharepoint.com/sites/WSMProjects)** (all libraries below live on this site unless noted). **Hub:** [WSM Hub](https://westatesmechanical.sharepoint.com/sites/WSMHub).
 
-**Hub (reference):** [WSM Hub](https://westatesmechanical.sharepoint.com/sites/WSMHub)
+**Goal:** Libraries for **active jobs**, **archive**, **bids**, and (optional) **standards/templates** — plus **metadata columns** so views and Power Automate stay usable without deep folder paths.
+
+---
+
+### 3.1 — Choose project storage pattern
+
+Pick **one** approach (both are valid):
+
+| Pattern | What you create | Best when |
+|---------|-----------------|-----------|
+| **A — Two libraries** | **PRJ-Active** + **PRJ-Archive** | Clear mental split; move whole job folders when closing |
+| **B — One library** | e.g. **Project Documents** + column **Lifecycle** = `Active` / `Closeout` / `Archive` | Fewer URLs; rely on views and metadata |
+
+Job **folder names** inside the library follow the wiki: `/<ProjectID>-<ClientShort>/` with the numbered + commercial subfolders (see [Project home template](/projects/template-project/project-home)).
+
+---
+
+### 3.2 — Create document libraries (runbook)
+
+**Who:** Site owner on **WSM Projects**.
+
+1. Open [WSM Projects](https://westatesmechanical.sharepoint.com/sites/WSMProjects).
+2. **Gear** → **Site contents** (or **+ New** → **Document library** from the nav, depending on layout).
+3. **+ New** → **Document library** → name it exactly (examples):
+   - `PRJ-Active` and `PRJ-Archive` **or** a single `Project Documents` (if using pattern B).
+   - `Bids` — estimating / bid files, addenda, **not** the same as live job folders.
+   - *(Optional)* `Standards` — controlled NFPA / company criteria PDFs (versioning on).
+   - *(Optional)* `Templates` — approved blank forms (versioning on; most users read-only).
+
+4. **Default “Documents”** library: either **rename** to fit your pattern or **leave** as general scratch — avoid mixing unrelated content with **PRJ-*** if you want clean permissions later.
+
+5. **Bids:** keep **separate** from PRJ so retention and guest access (if any) stay simpler.
+
+Microsoft: [Create a document library](https://learn.microsoft.com/en-us/sharepoint/create-doc-library) · [Create a column in a list or library](https://support.microsoft.com/office/create-a-column-in-a-list-or-library-b7d7cad1-2824-4949-926f-f4e88cba5228)
+
+---
+
+### 3.3 — Metadata columns (recommended)
+
+Add columns via **Library settings** → **Create column** (or **Add column** in grid view). Use **consistent internal names** (no spaces in API/Power Automate).
+
+**On PRJ-Active / PRJ-Archive / Project Documents** (apply to both if two libraries):
+
+| Column | Type | Values / notes |
+|--------|------|----------------|
+| **ProjectID** | Single line of text | e.g. `TI-2026-045`; matches ERP and wiki |
+| **ClientShort** | Single line of text | Matches folder suffix `ProjectID-ClientShort` |
+| **Lifecycle** | Choice | `Active`, `Closeout`, `Archive` — *required if using one library (pattern B)* |
+| **WikiArea** | Choice | `projects` (default for job files); other values if you tag non-project uploads |
+| **DocType** | Choice | e.g. `Submittal`, `RFI`, `Drawing`, `Contract`, `Bid`, `Other` — extend as needed |
+
+**On Bids** (simpler set):
+
+| Column | Type | Notes |
+|--------|------|--------|
+| **BidID** or **Opportunity** | Single line of text | Your bid / opportunity key |
+| **BidStatus** | Choice | e.g. `Pursuing`, `Submitted`, `Won`, `Lost`, `No-bid` |
+| **DueDate** | Date | Bid due date |
+
+**Standards / Templates** libraries: versioning **on**; minimal columns (e.g. **Category**, **EffectiveDate**) if useful.
+
+---
+
+### 3.4 — Views (quick win)
+
+On each PRJ library, create a **view** grouped or filtered by **ProjectID** or **Lifecycle** so PMs are not scrolling one flat list.
+
+---
+
+### 3.5 — Record library links (fill after creation)
+
+Paste each library’s **root URL** (open the library → copy address bar up to the library path, before `/Forms/` if present).
+
+| Library | URL |
+|---------|-----|
+| PRJ-Active *(or primary project library)* | `REPLACE_PRJ_ACTIVE_LIBRARY_URL` |
+| PRJ-Archive *(if used)* | `REPLACE_PRJ_ARCHIVE_LIBRARY_URL` |
+| Bids | `REPLACE_BIDS_LIBRARY_URL` |
+| Standards *(optional)* | `REPLACE_STANDARDS_LIBRARY_URL` or `—` |
+| Templates *(optional)* | `REPLACE_TEMPLATES_LIBRARY_URL` or `—` |
+
+**Done when:** At least **one** project library + **Bids** exist, core columns are on the project library, URLs are filled above, and a test folder `TEST-0000-TEST` can be created. Then move to **Task 4**.
+
+**Reference:** [SharePoint / M365 architecture guidelines — metadata](/company/resources/sharepoint-m365-architecture-guidelines#metadata-alignment-wiki-mental-model)
 
 ---
 
